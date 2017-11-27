@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Oratoria17.Site" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <title>Oratoria</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding-top: 70px;">
+    <form id="form1" runat="server">
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top" style="background: #007fc5;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo_tope.jpg" alt="Oratoria" style="height:52px;" /></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">CONCURSO NACIONAL DE ORATORIA 2017</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li> <asp:LinkButton ID="Logout" runat="server" CausesValidation="False" onclick="Logout_Click" style="text-align: right">Salir</asp:LinkButton></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> Cable & Wireless Panamá. All Rights Reserved</p>
+            </footer>
+        </div>
+    </form>
+
+    <!-- jQuery and Bootstrap JS files -->
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfServiceOratoria" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfServiceOratoria" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfJury">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Jury" nillable="true" type="tns:Jury" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJury" nillable="true" type="tns:ArrayOfJury" />
+  <xs:complexType name="Jury">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DeviceID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdCriteria" type="xs:int" />
+      <xs:element minOccurs="0" name="IdJury" type="xs:int" />
+      <xs:element minOccurs="0" name="IdRound" type="xs:int" />
+      <xs:element minOccurs="0" name="NameCriteria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Picture" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoundDescription" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Jury" nillable="true" type="tns:Jury" />
+  <xs:complexType name="ArrayOfStudent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Student" nillable="true" type="tns:Student" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStudent" nillable="true" type="tns:ArrayOfStudent" />
+  <xs:complexType name="Student">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Educational_Center" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdStudent" type="xs:int" />
+      <xs:element minOccurs="0" name="Picture" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Student" nillable="true" type="tns:Student" />
+  <xs:complexType name="ArrayOfCriteria">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Criteria" nillable="true" type="tns:Criteria" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCriteria" nillable="true" type="tns:ArrayOfCriteria" />
+  <xs:complexType name="Criteria">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdCriteria" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Weight" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Criteria" nillable="true" type="tns:Criteria" />
+  <xs:complexType name="ArrayOfElement">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Element" nillable="true" type="tns:Element" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfElement" nillable="true" type="tns:ArrayOfElement" />
+  <xs:complexType name="Element">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdCriteria" type="xs:int" />
+      <xs:element minOccurs="0" name="IdElement" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Element" nillable="true" type="tns:Element" />
+  <xs:complexType name="ArrayOfRoundResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RoundResults" nillable="true" type="tns:RoundResults" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRoundResults" nillable="true" type="tns:ArrayOfRoundResults" />
+  <xs:complexType name="RoundResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Element1Value" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Element2Value" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Element3Value" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Element4Value" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Round" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Student" nillable="true" type="tns:Student" />
+      <xs:element minOccurs="0" name="TotalCriteriaValue" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalValue" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RoundResults" nillable="true" type="tns:RoundResults" />
+  <xs:complexType name="ArrayOfGlobalRoundResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GlobalRoundResults" nillable="true" type="tns:GlobalRoundResults" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGlobalRoundResults" nillable="true" type="tns:ArrayOfGlobalRoundResults" />
+  <xs:complexType name="GlobalRoundResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Criteria1Value" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Criteria2Value" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Criteria3Value" type="xs:decimal" />
+      <xs:element minOccurs="0" name="IDRound" type="xs:int" />
+      <xs:element minOccurs="0" name="Penal" type="xs:int" />
+      <xs:element minOccurs="0" name="RoundDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Student" nillable="true" type="tns:Student" />
+      <xs:element minOccurs="0" name="SubTotal" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Total" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GlobalRoundResults" nillable="true" type="tns:GlobalRoundResults" />
+  <xs:complexType name="ArrayOfFinalResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FinalResults" nillable="true" type="tns:FinalResults" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFinalResults" nillable="true" type="tns:ArrayOfFinalResults" />
+  <xs:complexType name="FinalResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Position" type="xs:int" />
+      <xs:element minOccurs="0" name="Round1" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Round1Pond" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Round2" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Round2Pond" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Round3" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Round3Pond" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Student" nillable="true" type="tns:Student" />
+      <xs:element minOccurs="0" name="Total" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FinalResults" nillable="true" type="tns:FinalResults" />
+  <xs:complexType name="ArrayOfRound">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Round" nillable="true" type="tns:Round" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRound" nillable="true" type="tns:ArrayOfRound" />
+  <xs:complexType name="Round">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IDRound" type="xs:int" />
+      <xs:element minOccurs="0" name="Weight" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Round" nillable="true" type="tns:Round" />
+</xs:schema>

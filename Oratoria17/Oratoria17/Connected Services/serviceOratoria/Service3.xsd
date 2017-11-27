@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://31278n801srasss/Oratoria2016/WS/WcfServiceOratoria/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceOratoria" />
+  <xs:element name="CheckStatus">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckStatusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetJuryData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JuryPass" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetJuryDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfServiceOratoria" minOccurs="0" name="GetJuryDataResult" nillable="true" type="q1:ArrayOfJury" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActiveStudents">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActiveStudentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfServiceOratoria" minOccurs="0" name="GetActiveStudentsResult" nillable="true" type="q2:ArrayOfStudent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriterias">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriteriasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfServiceOratoria" minOccurs="0" name="GetCriteriasResult" nillable="true" type="q3:ArrayOfCriteria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetElements">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IDCriteria" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetElementsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfServiceOratoria" minOccurs="0" name="GetElementsResult" nillable="true" type="q4:ArrayOfElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetStudentEvaluation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Element1" type="xs:decimal" />
+        <xs:element minOccurs="0" name="Element2" type="xs:decimal" />
+        <xs:element minOccurs="0" name="Element3" type="xs:decimal" />
+        <xs:element minOccurs="0" name="Element4" type="xs:decimal" />
+        <xs:element minOccurs="0" name="IDStudent" type="xs:int" />
+        <xs:element minOccurs="0" name="IDJury" type="xs:int" />
+        <xs:element minOccurs="0" name="IDRound" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetStudentEvaluationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetStudentEvaluationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeactivateJury">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IDJury" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeactivateJuryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeactivateJuryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoundResults">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IDJury" type="xs:int" />
+        <xs:element minOccurs="0" name="IDRound" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoundResultsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfServiceOratoria" minOccurs="0" name="GetRoundResultsResult" nillable="true" type="q5:ArrayOfRoundResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGlobalRoundResults">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IDRound" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGlobalRoundResultsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WcfServiceOratoria" minOccurs="0" name="GetGlobalRoundResultsResult" nillable="true" type="q6:ArrayOfGlobalRoundResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFinalResults">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFinalResultsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WcfServiceOratoria" minOccurs="0" name="GetFinalResultsResult" nillable="true" type="q7:ArrayOfFinalResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoundDetails">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoundDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WcfServiceOratoria" minOccurs="0" name="GetRoundDetailsResult" nillable="true" type="q8:ArrayOfRound" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDevicetoJury">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IDJury" type="xs:int" />
+        <xs:element minOccurs="0" name="DeviceID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDevicetoJuryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetDevicetoJuryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oratoria17", "Oratoria17\Oratoria17.csproj", "{EEA9A27F-8CEF-48BA-B8EE-A0BB4D8535D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEA9A27F-8CEF-48BA-B8EE-A0BB4D8535D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEA9A27F-8CEF-48BA-B8EE-A0BB4D8535D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEA9A27F-8CEF-48BA-B8EE-A0BB4D8535D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEA9A27F-8CEF-48BA-B8EE-A0BB4D8535D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AC3658A-6D0C-444D-8D83-8BCBCB48BC26}
+	EndGlobalSection
+EndGlobal

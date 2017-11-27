@@ -1,0 +1,8 @@
+C:\Users\FliaHM\Desktop\Oratoria\Oratoria17\Oratoria17\bin\Oratoria17.dll.config
+C:\Users\FliaHM\Desktop\Oratoria\Oratoria17\Oratoria17\bin\Oratoria17.dll
+C:\Users\FliaHM\Desktop\Oratoria\Oratoria17\Oratoria17\bin\Oratoria17.pdb
+C:\Users\FliaHM\Desktop\Oratoria\Oratoria17\Oratoria17\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\FliaHM\Desktop\Oratoria\Oratoria17\Oratoria17\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\FliaHM\Desktop\Oratoria\Oratoria17\Oratoria17\obj\Debug\Oratoria17.csproj.CoreCompileInputs.cache
+C:\Users\FliaHM\Desktop\Oratoria\Oratoria17\Oratoria17\obj\Debug\Oratoria17.dll
+C:\Users\FliaHM\Desktop\Oratoria\Oratoria17\Oratoria17\obj\Debug\Oratoria17.pdb

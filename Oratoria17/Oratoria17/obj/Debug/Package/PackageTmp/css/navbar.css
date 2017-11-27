@@ -1,0 +1,48 @@
+﻿
+#navbar .nav li a {
+    color: white;
+}
+    #navbar .nav li a:hover {
+        color: white;
+        background: #f58220
+    }
+.navbar-brand{
+    padding:0px;
+}
+#jurado {
+    margin: 15px;
+    float: left;
+    
+}
+#imagen {
+    margin: 15px;
+    float: left;
+}
+#detalles {
+    margin: 0px;
+    padding:0px;
+    float: left;
+}
+#estuDatos {
+    margin: 15px;
+    float: left;
+    width: 850px;
+}
+#estudiante{
+    margin:15px;
+    float:left;
+}
+
+#calificacion{
+    margin:15px;
+    float:left;
+    width: 588px;
+}
+.clear{
+    clear:both
+}
+footer{
+    height:150px;
+    border:1px ;
+    margin:10px;
+}

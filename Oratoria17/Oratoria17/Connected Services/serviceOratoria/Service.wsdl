@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://31278n801srasss/Oratoria2016/WS/WcfServiceOratoria/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://31278n801srasss/Oratoria2016/WS/WcfServiceOratoria/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://31278n801srasss/Oratoria2016/WS/WcfServiceOratoria/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceOratoria" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_CheckStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckStatus" />
+  </wsdl:message>
+  <wsdl:message name="IService_CheckStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetJuryData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJuryData" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetJuryData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJuryDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetActiveStudents_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveStudents" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetActiveStudents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveStudentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetCriterias_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriterias" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetCriterias_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetElements_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetElements" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetElements_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetElementsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SetStudentEvaluation_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetStudentEvaluation" />
+  </wsdl:message>
+  <wsdl:message name="IService_SetStudentEvaluation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetStudentEvaluationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_DeactivateJury_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateJury" />
+  </wsdl:message>
+  <wsdl:message name="IService_DeactivateJury_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateJuryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetRoundResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoundResults" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetRoundResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoundResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetGlobalRoundResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGlobalRoundResults" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetGlobalRoundResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGlobalRoundResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetFinalResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFinalResults" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetFinalResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFinalResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetRoundDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoundDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetRoundDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoundDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SetDevicetoJury_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDevicetoJury" />
+  </wsdl:message>
+  <wsdl:message name="IService_SetDevicetoJury_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDevicetoJuryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="CheckStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/CheckStatus" message="tns:IService_CheckStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/CheckStatusResponse" message="tns:IService_CheckStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJuryData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetJuryData" message="tns:IService_GetJuryData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetJuryDataResponse" message="tns:IService_GetJuryData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveStudents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetActiveStudents" message="tns:IService_GetActiveStudents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetActiveStudentsResponse" message="tns:IService_GetActiveStudents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCriterias">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetCriterias" message="tns:IService_GetCriterias_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetCriteriasResponse" message="tns:IService_GetCriterias_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetElements">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetElements" message="tns:IService_GetElements_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetElementsResponse" message="tns:IService_GetElements_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetStudentEvaluation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SetStudentEvaluation" message="tns:IService_SetStudentEvaluation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SetStudentEvaluationResponse" message="tns:IService_SetStudentEvaluation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateJury">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/DeactivateJury" message="tns:IService_DeactivateJury_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/DeactivateJuryResponse" message="tns:IService_DeactivateJury_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoundResults">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetRoundResults" message="tns:IService_GetRoundResults_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetRoundResultsResponse" message="tns:IService_GetRoundResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGlobalRoundResults">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetGlobalRoundResults" message="tns:IService_GetGlobalRoundResults_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetGlobalRoundResultsResponse" message="tns:IService_GetGlobalRoundResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFinalResults">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetFinalResults" message="tns:IService_GetFinalResults_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetFinalResultsResponse" message="tns:IService_GetFinalResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoundDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetRoundDetails" message="tns:IService_GetRoundDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetRoundDetailsResponse" message="tns:IService_GetRoundDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDevicetoJury">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SetDevicetoJury" message="tns:IService_SetDevicetoJury_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SetDevicetoJuryResponse" message="tns:IService_SetDevicetoJury_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckStatus">
+      <soap:operation soapAction="http://tempuri.org/IService/CheckStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJuryData">
+      <soap:operation soapAction="http://tempuri.org/IService/GetJuryData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveStudents">
+      <soap:operation soapAction="http://tempuri.org/IService/GetActiveStudents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCriterias">
+      <soap:operation soapAction="http://tempuri.org/IService/GetCriterias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetElements">
+      <soap:operation soapAction="http://tempuri.org/IService/GetElements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetStudentEvaluation">
+      <soap:operation soapAction="http://tempuri.org/IService/SetStudentEvaluation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateJury">
+      <soap:operation soapAction="http://tempuri.org/IService/DeactivateJury" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoundResults">
+      <soap:operation soapAction="http://tempuri.org/IService/GetRoundResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGlobalRoundResults">
+      <soap:operation soapAction="http://tempuri.org/IService/GetGlobalRoundResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFinalResults">
+      <soap:operation soapAction="http://tempuri.org/IService/GetFinalResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoundDetails">
+      <soap:operation soapAction="http://tempuri.org/IService/GetRoundDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDevicetoJury">
+      <soap:operation soapAction="http://tempuri.org/IService/SetDevicetoJury" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService">
+      <soap:address location="http://31278n801srasss/Oratoria2016/WS/WcfServiceOratoria/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
